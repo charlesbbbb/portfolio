@@ -8,19 +8,10 @@ let slideIndex = 1;
         function closeLightbox() {
           document.getElementById('Lightbox').style.display = 'none';
           pauseAll();
-          // $("iframe").each(function() {
-          //   var src= $(this).attr('src');
-          //   $(this).attr('src',src);
-          // });
         };
         
         function changeSlide(n) {
           showSlide(slideIndex += n);
-          // $("iframe").api("pause");
-          // $("iframe").each(function() {
-          //   var src= $(this).attr('src');
-          //   $(this).attr('src',src);
-          // });
           pauseAll();
           console.log("next slide");
         };
